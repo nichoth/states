@@ -1,0 +1,7 @@
+{
+  "scripts": {
+  },
+  "dependencies": {
+    "redux": "^3.0.2"
+  }
+}
