@@ -4,6 +4,7 @@ State machines in javascript
 
 * redux
 * vanilla node
+* ampersand state
 
 ## install
 
