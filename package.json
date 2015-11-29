@@ -1,12 +1,27 @@
 {
   "babel": {
-    "presets": ["es2015"]
+    "presets": [
+      "es2015"
+    ]
+  },
+  "browserify": {
+    "tansform": [
+      "babelify"
+    ]
   },
   "scripts": {
+    "build-amp": "browserify counter/amp-counter.js > dist/counter/amp-counter.js",
+    "build-node": "browserify counter/node-counter.js > dist/counter/node-counter.js",
+    "build-redux": "browserify counter/redux-counter.js > dist/counter/redux-counter.js",
+    "build": "npm run build-amp && npm run build-node && npm run build-redux"
   },
   "dependencies": {
     "ampersand-state": "^4.8.2",
     "babel-preset-es2015": "^6.1.18",
+    "babelify": "^7.2.0",
     "redux": "^3.0.2"
+  },
+  "devDependencies": {
+    "lodash.template": "^3.6.2"
   }
 }
