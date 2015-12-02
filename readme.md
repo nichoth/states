@@ -27,12 +27,14 @@ To handle complex state, split up the event handler function so that operations 
 
     $ npm run build && ls -lh dist/counter
 
-    -rw-r--r--  1 nick  staff   186K Nov 29 10:55 amp-counter.js
+    -rw-r--r--  1 nick  staff   186K Dec  1 20:00 amp-counter.js
+    -rw-r--r--  1 nick  staff    40K Dec  1 20:01 amp-counter.min.js
     -rw-r--r--  1 nick  staff   9.2K Nov 29 10:55 node-counter.js
+    -rw-r--r--  1 nick  staff   4.4K Dec  1 20:02 node-counter.min.js
     -rw-r--r--  1 nick  staff    22K Nov 29 10:55 redux-counter.js
+    -rw-r--r--  1 nick  staff   8.2K Dec  1 20:02 redux-counter.min.js
 
-
-    $ wc -l dist/counter/*
+    $ wc -l dist/counter/*r.js
 
     5914 dist/counter/amp-counter.js
      333 dist/counter/node-counter.js
